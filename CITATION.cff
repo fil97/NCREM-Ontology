@@ -4,8 +4,19 @@ title: "NCREM Ontology"
 authors:
   - family-names: Lygerakis
     given-names: Filippos
-    orcid: https://orcid.org/
     affiliation: Technical University of Crete (TUC)
+    orcid: https://orcid.org/
+
+contributors:
+  - family-names: 
+    given-names: 
+    affiliation: 
+    orcid: https://orcid.org/
+    roles: [ProjectMember]
+  - family-names: 
+    given-names: 
+    affiliation: 
+    roles: [DataCurator]
 date-released: 2025-09-18
 version: "1.0"
 license: "CC-BY-4.0"
