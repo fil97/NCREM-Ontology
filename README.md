@@ -99,3 +99,9 @@ If you use this ontology in your research or project, please cite:
 ```
 Filippos Lygerakis, Environmental Engineer, MSc, Technical University of Crete (TUC). NCREM Ontology v1.0.
 ```
+
+## 📢 Funding Acknowledgment
+
+This ontology was developed within the scope of the [PROBONO](https://www.probonoh2020.eu/) project, funded by the European Union’s Horizon 2020 research and innovation programme under grant agreement No. **101037075**.
+
+The PROBONO project aims to deliver scalable and sustainable energy-positive and zero-carbon urban solutions, contributing to the European Green Deal objectives and the transformation of the built environment.
