@@ -4,10 +4,10 @@ title: "NCREM Ontology"
 authors:
   - family-names: Lygerakis
     given-names: Filippos
-    orcid: https://orcid.org/0000-0000-0000-0000  # Replace with your real ORCID if available
+    orcid: https://orcid.org/
     affiliation: Technical University of Crete (TUC)
 date-released: 2025-09-18
-version: "2.1"
+version: "1.0"
 license: "CC-BY-4.0"
-repository-code: https://github.com/yourusername/ncrem-ontology  # Replace with actual URL
+repository-code: 
 message: "If you use this ontology, please cite it using the metadata below."
