@@ -100,6 +100,15 @@ If you use this ontology in your research or project, please cite:
 Filippos Lygerakis, Environmental Engineer, MSc, Technical University of Crete (TUC). NCREM Ontology v1.0.
 ```
 
+
+## 👥 Contributors
+
+- Filippos Lygerakis – Author (Technical University of Crete)
+- [Other contributors…]
+
+
+---
+
 ## 📢 Funding Acknowledgment
 
 This ontology was developed within the scope of the [PROBONO](https://www.probonoh2020.eu/) project, funded by the European Union’s Horizon 2020 research and innovation programme under grant agreement No. **101037075**.
