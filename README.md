@@ -22,19 +22,26 @@ It is designed to support **Key Performance Indicators (KPIs)**, energy systems,
 
 ## 📛 Namespaces
 
-| Prefix       | Namespace URI |
-|--------------|----------------|
-| `ncrem`      | http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#  
-| `brick`      | https://brickschema.org/schema/Brick#  
-| `core`       | https://saref.etsi.org/core/  
-| `s4city`     | https://saref.etsi.org/saref4city/  
-| `saref4ener` | https://saref.etsi.org/saref4ener/  
-| `kpi`        | http://bimerr.iot.linkeddata.es/def/key-performance-indicator#  
-| `qudt`       | http://qudt.org/schema/qudt/  
-| `skos`       | http://www.w3.org/2004/02/skos/core#  
-| `dcterms`    | http://purl.org/dc/terms/  
-| `owl`        | http://www.w3.org/2002/07/owl#  
-| `rdfs`       | http://www.w3.org/2000/01/rdf-schema#  
+| Prefix      | Namespace URI |
+|-------------|----------------|
+| `xml`       | `http://www.w3.org/XML/1998/namespace` |
+| `kpi`       | `http://bimerr.iot.linkeddata.es/def/key-performance-indicator#` |
+| `mat`       | `http://bimerr.iot.linkeddata.es/def/material-properties#` |
+| `ssn`       | `http://www.w3.org/ns/ssn/` |
+| `core`      | `https://saref.etsi.org/core/` |
+| `qudt`      | `http://qudt.org/schema/qudt/` |
+| `seas`      | `https://w3id.org/seas/` |
+| `skos`      | `http://www.w3.org/2004/02/skos/core#` |
+| `weat`      | `https://bimerr.iot.linkeddata.es/def/weather` |
+| `brick`     | `https://brickschema.org/schema/Brick#` |
+| `ncrem`     | `http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#` |
+| `shacl`     | `http://www.w3.org/ns/shacl#` |
+| `s4agri`    | `https://saref.etsi.org/saref4agri/` |
+| `s4bldg`    | `https://saref.etsi.org/saref4bldg/` |
+| `s4city`    | `https://saref.etsi.org/saref4city/` |
+| `s4ener`    | `https://saref.etsi.org/saref4ener/` |
+| `dcterms`   | `http://purl.org/dc/terms/` |
+| `building`  | `https://bimerr.iot.linkeddata.es/def/building#` |
 
 ---
 
