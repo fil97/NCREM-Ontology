@@ -5,18 +5,16 @@ authors:
   - family-names: Lygerakis
     given-names: Filippos
     affiliation: Technical University of Crete (TUC)
-    orcid: https://orcid.org/
+    orcid: https://orcid.org/0009-0003-1336-0291
 
 contributors:
-  - family-names: 
-    given-names: 
-    affiliation: 
-    orcid: https://orcid.org/
-    roles: [ProjectMember]
-  - family-names: 
-    given-names: 
-    affiliation: 
-    roles: [DataCurator]
+  - family-names: Kampelis
+    given-names: Nikolaos
+    affiliation: Cyprus Institute
+    orcid: https://orcid.org/0000-0003-2152-6602
+  - family-names: Kolokotsa
+    given-names: Dionysia
+    affiliation: Technical University of Crete (TUC)
 date-released: 2025-09-18
 version: "1.0"
 license: "CC-BY-4.0"
