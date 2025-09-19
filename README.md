@@ -104,7 +104,8 @@ Filippos Lygerakis, Environmental Engineer, MSc, Technical University of Crete (
 ## 👥 Contributors
 
 - Filippos Lygerakis – Author (Technical University of Crete)
-- [Other contributors…]
+- Nikolaos Kampelis - Contributor (Technical University of Crete)
+- Dionysia Kolokotsa - Contributor (Technical University of Crete)
 
 
 ---
