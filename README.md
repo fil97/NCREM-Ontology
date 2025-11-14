@@ -3,7 +3,7 @@
 
 **Neighborhood Construction, Renovation & Energy Management (NCREM) Ontology**  
 📅 Version: 1.0  
-👤 Created by: *Filippos Lygerakis*, Environmental Engineer, MSc, Technical University of Crete (TUC)
+👤 Created by: *Filippos Lygerakis*, Environmental Engineer, PhD, MSc, Technical University of Crete (TUC)
 
 ---
 
