@@ -1,324 +1,359 @@
-# 📘 NCREM Ontology Details
+# NCREM Ontology Details
 
-This document provides a complete list of all **classes**, **object properties**, and **data properties** defined in the NCREM Ontology.
+This document provides a generated overview of the terms defined or reused in `NCREM_Ontology_v1.1.ttl`.
 
----
+## Summary
 
-## 🧩 Classes
+- Source file: `NCREM_Ontology_v1.1.ttl`
+- Classes: 253
+- Object properties: 47
+- Datatype properties: 13
+- Annotation properties: 15
 
-| URI | Label | Comment |
+## Classes
+
+| URI | Label | Description |
 | --- | --- | --- |
 | http://bimerr.iot.linkeddata.es/def/building#BuildingElement | Building Element | The building element comprises all elements that are primarily part of the construction of a building, i.e., its structural and space separating system. Building elements are all physically existent and tangible things. |
 | http://bimerr.iot.linkeddata.es/def/building#Door | Door | The door is a building element that is predominately used to provide controlled access for people and goods. It includes constructions with hinged, pivoted, sliding, and additionally revolving and folding operations. A door consists of a lining and one or several panels. |
-| http://bimerr.iot.linkeddata.es/def/building#Element |  |  |
+| http://bimerr.iot.linkeddata.es/def/building#Element |  | An element is a generalization of all components that make up an AEC product. |
 | http://bimerr.iot.linkeddata.es/def/building#Roof | Roof | A roof is the covering of the top part of a building, it protects the building against the effects of wheather. |
 | http://bimerr.iot.linkeddata.es/def/building#Slab | Slab | A slab is a component of the construction that normally encloses a space vertically. The slab may provide the lower support (floor) or upper construction (roof slab) in any space in a building. |
 | http://bimerr.iot.linkeddata.es/def/building#Wall | Wall | The wall represents a vertical construction that bounds or subdivides spaces. Wall are usually vertical, or nearly vertical, planar elements, often designed to bear structural loads. A wall is however not required to be load bearing. |
 | http://bimerr.iot.linkeddata.es/def/building#Window | Window | The window is a building element that is predominately used to provide natural light and fresh air. It includes vertical opening but also horizontal opening such as skylights or light domes. It includes constructions with swinging, pivoting, sliding, or revolving panels and fixed panels. A window consists of a lining and one or several panels. |
 | http://bimerr.iot.linkeddata.es/def/key-performance-indicator#Scenario | Scenario | The simluation of a building renovation work. |
-| http://bimerr.iot.linkeddata.es/def/material-properties#Material |  |  |
-| http://bimerr.iot.linkeddata.es/def/material-properties#MaterialLayer |  |  |
-| http://purl.org/dc/terms/format |  |  |
-| http://qudt.org/schema/qudt/Unit |  |  |
-| http://schema.org/ImageObject |  |  |
-| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#ABM_Parameter_a |  |  |
-| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#Absorption |  |  |
-| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#Accumulated_Charged_Energy_from_System |  |  |
-| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#Accumulated_Discharged_Energy_from_System |  |  |
-| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#Accumulated_PV_Electricity_Production |  |  |
-| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#AcousticComfort_OccupantPerception |  |  |
-| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#AirPollutantsOperationalStage |  |  |
-| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#BER-BuildingEnergyRating |  |  |
-| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#Blinds_Schedule |  |  |
-| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#CO2 |  |  |
-| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#CO2EmissionsOperationalStage |  |  |
-| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#Charged_Energy |  |  |
-| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#Comfort_KPIs |  |  |
-| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#Construction_Phase_KPIs |  |  |
-| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#Cooling_Schedule |  |  |
-| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#CostAlongTheLCC |  |  |
-| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#Data |  |  |
-| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#Density |  |  |
-| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#Dimensions |  |  |
-| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#Drainage_Layer |  |  |
-| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#Duration |  |  |
-| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#DustQuality_OccupantPerception |  |  |
-| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#EV_Charging_Power |  |  |
-| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#EV_Energy_Consumption |  |  |
-| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#Effectiveness_of_Urban_Actuations_in_UHI |  |  |
-| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#Electric_Current |  |  |
-| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#Electricity |  |  |
-| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#Electricity_Power_Consumption |  |  |
-| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#Electricity_Production |  |  |
-| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#EmbodiedEnergy |  |  |
-| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#Emissivity |  |  |
-| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#EnergyDemand |  |  |
-| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#Energy_KPIs |  |  |
-| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#Environmental_Quality_Sensor |  |  |
-| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#Exported_Energy |  |  |
-| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#External_Wall |  |  |
-| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#Filter_Sheet |  |  |
-| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#FinalEnergy |  |  |
-| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#Forecasted_Exported_Energy |  |  |
-| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#Forecasted_Power_Production |  |  |
-| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#Forecasted_Total_Consumption |  |  |
-| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#GHGEmisionsAlongLCA |  |  |
-| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#HEGR |  | Highly Evaporative Green Roof (HEGR) |
-| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#HEGR_Layers |  |  |
-| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#HVAC |  |  |
-| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#Heating_Schedule |  |  |
-| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#Height |  |  |
-| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#Hourly_Electricity_Market_Value |  |  |
-| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#IAQ_IndoorAirQuality_OccupantPerception |  |  |
-| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#Image |  | An Image. |
-| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#Imported_Energy |  |  |
-| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#Indoor |  |  |
-| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#Instantaneous_Power_Consumption |  |  |
-| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#LCA_KPIs |  |  |
-| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#Material_Capacity |  |  |
-| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#Material_Property |  |  |
-| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#Maximum_UHI_Intensity_per_Urban_District_or_Neighborhood |  |  |
-| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#Monthly_Electricity_Consumption |  |  |
-| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#Noise_Level_Sensor |  |  |
-| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#Number_of_People_Affected_by_Extreme_Temperature_Events |  |  |
-| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#Operation_Phase_KPIs |  |  |
-| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#OperationalCostOfEnergy |  |  |
-| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#Outdoor |  |  |
-| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#Outdoor_air_temperature |  |  |
-| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#Outdoor_barometric_pressure |  |  |
-| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#Outdoor_dew_point_temperature |  |  |
-| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#Outdoor_diffuse_solar_radiation |  |  |
-| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#Outdoor_direct_solar_radiation |  |  |
-| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#Outdoor_horizontal_infrared_radiation |  |  |
-| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#Outdoor_relative_humidity |  |  |
-| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#Outdoor_wind_direction |  |  |
-| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#Outdoor_wind_speed |  |  |
-| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#PMV_Parameter |  |  |
-| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#PTHP_Cooling_Energy |  |  |
-| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#PTHP_Electricity_Rate |  |  |
-| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#PTHP_Heating_Energy |  |  |
-| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#PV_Peak_Installed_Power |  |  |
-| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#PV_Power |  |  |
-| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#Parameter |  |  |
-| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#Percentage_of_City_Affected_by_UHI |  |  |
-| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#Power_Consumption_in_Charging_Mode |  |  |
-| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#Power_Consumption_in_Discharging_Mode |  |  |
-| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#Power_Production |  |  |
-| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#Predicted_Mean_Vote_PMV |  |  |
-| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#Price |  |  |
-| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#Protection_Mat |  |  |
-| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#Purchased_Amount |  |  |
-| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#Radiant_Temperature |  |  |
-| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#Reflection |  |  |
-| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#Relative_Humidity |  |  |
-| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#RenewableEnergyProduction |  |  |
-| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#Replicability |  |  |
-| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#Roof_Deck |  |  |
-| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#Root_Barrier |  |  |
-| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#Schedule |  |  |
-| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#Season |  |  |
-| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#Self_Consumption_Ratio |  |  |
-| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#Setpoint |  |  |
-| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#ShortenedConstruction_RetrofittingCost |  |  |
-| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#ShortenedConstruction_RetrofittingCost_Manifacturing |  |  |
-| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#ShortenedConstruction_RetrofittingCost_SpaceCosts_WarehouseEstablishment |  |  |
-| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#ShortenedConstruction_RetrofittingCost_StockKeeping |  |  |
-| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#ShortenedConstruction_RetrofittingCost_Transportation |  |  |
-| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#Soil_Humidity_Sensor |  |  |
-| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#Solar_Irradiance |  |  |
-| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#Solar_altitude_angle |  |  |
-| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#Solar_azimuth_angle |  |  |
-| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#Solar_hour |  |  |
-| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#Specific_Heat |  |  |
-| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#Storage_System_Installed_Power |  |  |
-| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#Substrate |  |  |
-| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#Supplier |  |  |
-| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#Supplier_Sourcing |  |  |
-| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#Task |  |  |
-| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#ThermalComfort_OccupantPerception |  |  |
-| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#Thermal_Conductivity |  |  |
-| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#Thermostat_Schedule |  |  |
-| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#Thickness |  |  |
-| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#Time |  |  |
-| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#Transmission |  |  |
-| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#UHI_KPIs |  |  |
-| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#Vegetation |  |  |
-| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#Ventilation_Rate |  |  |
-| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#Ventilation_Schedule |  |  |
-| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#VisualComfort_OccupantPerception |  |  |
-| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#Voltage |  |  |
-| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#Waterproofing |  |  |
-| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#Weather_File_Properties |  |  |
-| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#Weight |  |  |
-| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#Workflow |  |  |
-| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#Zone_Cooling_Setpoint |  |  |
-| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#Zone_Energy |  |  |
-| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#Zone_Heating_Setpoint |  |  |
-| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#Zone_Radiant_Temperature |  |  |
-| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#Zone_Rate |  |  |
-| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#Zone_Relative_Humidity |  |  |
-| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#Zone_Temperature |  |  |
-| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#Zone_Transmitted_Energy |  |  |
-| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#Zone_Ventilation_Rate |  |  |
-| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#distance_ship |  |  |
-| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#distance_truck |  |  |
-| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#metabolic_rate |  |  |
-| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#occupant_clothing_insulation_level |  |  |
-| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#ShortenedConstruction/ShortenedConstruction_RetrofittingTime |  |  |
+| http://bimerr.iot.linkeddata.es/def/material-properties#Material |  | A homogeneous or inhomogeneous substance that can be used to form elements (physical products or their components). (Definition taken from IFC) |
+| http://bimerr.iot.linkeddata.es/def/material-properties#MaterialLayer |  | A single, identifiable layer in a multi-layer construction assembly. |
+| http://qudt.org/schema/qudt/Unit |  | A standard quantity used for measurement, allowing properties and values (e.g., energy, temperature, flow rate) to be expressed consistently. |
+| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#ABM_Parameter_a | ABM Parameter A | A specific parameter used in Agent-Based Modeling (ABM), representing the relatinship between the energy consumption and thermal comfort in a pareto curve. |
+| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#Absorption | Absorption | A materialâ€™s ability to absorb sound, light, or moisture. |
+| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#Accumulated_Charged_Energy_from_System | Accumulated Charged Energy From System | The total amount of energy cumulatively charged into an energy storage system over a period of time. |
+| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#Accumulated_Discharged_Energy_from_System | Accumulated Discharged Energy From System | The total amount of energy cumulatively discharged from an energy storage system over a period of time. |
+| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#Accumulated_PV_Electricity_Production | Accumulated PV Electricity Production | The cumulative electricity generated by a photovoltaic system over a defined time period. |
+| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#AcousticComfort_OccupantPerception | Acoustic Comfort Occupant Perception | Percentage of time above the noise levels recommended due to noise coming from inside or outside sources in occupied spaces. To define the noise levels recommended from a general prespective. The criteria used to measure an acceptable acoustic comfort can include sound levels decibels, noise rating, or noise criteria (EN 16798).   The objective is to provide an assessment of the accoustic comfort of a building before and after renovation.   In the context of seeking to measure the accoustic performance of a building, the selected design solutions need to protect its users from both the accoustic climate otuside and from unwanted noise generated inside the building, or coming from neighbouring buildings.     Perception of the owners, occupiers, tenant and employees in LLs buildings feeling that the Acoustic comfort level has improved because of the project innovations. |
+| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#AirPollutantsOperationalStage | Air Pollutants Operational Stage | A KPI describing air-pollutant impacts associated with the operational stage of a building or neighborhood. |
+| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#BER-BuildingEnergyRating | BER Building Energy Rating | A numerical or categorical rating that reflects the overall energy efficiency of a building, typically based on calculated or measured consumption. |
+| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#Blinds_Schedule | Blinds Schedule | Time-based or sensor-driven operation pattern for window shading devices. |
+| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#CO2 | CO2 | A KPI or property related to carbon dioxide concentration or emissions, depending on the measurement context. |
+| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#CO2EmissionsOperationalStage | CO2 Emissions Operational Stage | A KPI describing carbon dioxide emissions associated with the operational stage of a building or neighborhood. |
+| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#Charged_Energy | Charged Energy | Amount of energy stored in a system (e.g., battery) during charging. |
+| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#Comfort_KPIs | Comfort KPIs | A category of key performance indicators used to evaluate occupant comfort conditions. |
+| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#Construction_Phase_KPIs | Construction Phase KPIs | KPIs that relate to the Construction phase of a building or Neighborhood |
+| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#Cooling_Schedule | Cooling Schedule | Schedule dictating when cooling systems are active. |
+| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#CostAlongTheLCC | Cost Along The LCC | Total cost incurred throughout the buildingâ€™s life cycle, including construction, operation, maintenance, and end-of-life phases. |
+| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#Data | Data | A generic information artifact used as input, output, or reference in the NCREM domain. |
+| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#DataFormat | Data format | A property describing the representation or encoding format of a data file or dataset. |
+| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#Density | Density | Mass per unit volume of a material (e.g., kg/mÂ³), affecting thermal mass and structural load. |
+| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#Dimensions | Dimensions | A category of physical measurements describing the size or geometry of an object or space, such as height, width, thickness, or depth. |
+| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#Discharged_Energy | Discharged Energy | Energy released from a storage system for use. |
+| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#Drainage_Layer | Drainage Layer | A layer that facilitates the removal of excess water from the green roof system, preventing waterlogging and ensuring healthy root conditions. |
+| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#Duration | Duration | A temporal extent describing how long a task, event, or workflow lasts. |
+| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#DustQuality_OccupantPerception | Dust Quality Occupant Perception | Reflects occupant perception of dust levels or air cleanliness, affecting health and indoor air quality comfort. |
+| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#EV_Charging_Power | EV Charging Power | The electrical power used while charging an electric vehicle. |
+| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#EV_Energy_Consumption | EV Energy Consumption | The amount of energy consumed by an electric vehicle or charging process. |
+| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#Effectiveness_of_Urban_Actuations_in_UHI | Effectiveness Of Urban Actuations In UHI | Measures how successful specific urban interventions (e.g., green roofs, tree planting, reflective surfaces) are at reducing UHI intensity or mitigating its impacts. |
+| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#Electric_Current | Electric Current | The rate of flow of electric charge, measured in amperes (A). |
+| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#Electricity | Electricity | A form of energy resulting from the flow of electric charge, typically generated, consumed, or stored in building systems and infrastructure. |
+| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#Electricity_Power_Consumption | Electricity Power Consumption | The rate at which electrical power is consumed by a system, device, or process. |
+| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#Electricity_Production | Electricity Production | The amount of electrical energy generated, usually in kilowatt-hours (kWh). |
+| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#EmbodiedEnergy | Embodied Energy | The total energy consumed in the production and delivery of building materials and components, up to installation. |
+| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#Emissivity | Emissivity | The ability of a surface to emit thermal radiation, important for radiative heat transfer. |
+| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#EnergyDemand | Energy Demand | The energy demand of the building, is the total amount of energy the energy systems of the building need to provide to maintain its indoor environment in comfortable conditions, in this case for heating and cooling purposes. Energy demand is usually differenciated by different energy uses (heating, cooling). It takes into account the energy lost and gained due to thermal transmission via opaque and transparent elements, the energy exchange due to ventilation and infiltration, the gains due to occupancy, lighting and electrical appliances as well as the required heating and cooling inputs.   Energy demand could be reduced through minimising the energy needs (i.e: temperature set-points, etc.) and also through the improvement of the passive elements of the building. |
+| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#Energy_KPIs | Energy KPIs | A category of key performance indicators used to evaluate energy-related performance. |
+| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#Environmental_Quality_Sensor | Environmental Quality Sensor | A category of sensors used to monitor environmental conditions that affect human comfort, health, and building performance. |
+| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#Exported_Energy | Exported Energy | Energy sent out from the system/building to the grid or other subsystems. |
+| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#External_Wall | External Wall | The External wall of a building that comes in contact woth the outside environment. |
+| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#Filter_Sheet | Filter Sheet | A permeable textile layer that prevents fine particles from the substrate from clogging the drainage layer, ensuring proper water flow. |
+| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#FinalEnergy | Final Energy | The amount of energy delivered to the building for final use, after all conversion and distribution losses. |
+| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#Forecasted_Exported_Energy | Forecasted Exported Energy | The anticipated amount of energy that will be fed back into the grid from on-site renewable generation systems after local demand has been met. |
+| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#Forecasted_Power_Production | Forecasted Power Production | The expected amount of electrical power that will be generated by on-site energy systems (e.g., photovoltaics, wind turbines) over a given future time period. |
+| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#Forecasted_Total_Consumption | Forecasted Total Consumption | The predicted total amount of energy that a building, facility, or system is expected to consume over a specified future time period. |
+| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#GHGEmisionsAlongLCA | GHG Emisions Along LCA | Total greenhouse gas emissions produced across the full life cycle of the building, from material extraction to disposal. |
+| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#HEGR | HEGR | Highly Evaporative Green Roof (HEGR) |
+| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#HEGR_Layers | HEGR Layers | A layer that forms part of a Highly Evaporative Green Roof (HEGR) assembly. |
+| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#HVAC | HVAC | An integrated system responsible for regulating indoor thermal conditions, air quality, and ventilation to maintain occupant comfort and building energy performance. |
+| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#Heating_Schedule | Heating Schedule | Schedule defining heating operation periods. |
+| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#Height | Height | The vertical extent of an object or building component. |
+| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#Hourly_Electricity_Market_Value | Hourly Electricity Market Value | The real-time market price (e.g., â‚¬/MWh) of electricity on an hourly basis, used for cost-benefit analysis and demand-side flexibility modeling. |
+| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#IAQ_IndoorAirQuality_OccupantPerception | IAQ Indoor Air Quality Occupant Perception | A subjective measure of how occupants perceive indoor air quality, including freshness, odors, and pollutant levels. |
+| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#Image | Image | A visual information artifact such as a photo, rendering, chart, or simulation image. |
+| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#Imported_Energy | Imported Energy | Energy consumed from external sources (e.g., grid). |
+| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#Indoor | Indoor | A physical location that is enclosed within a building or structure. |
+| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#Instantaneous_Power_Consumption | Instantaneous Power Consumption | The rate at which electrical power is being consumed by a system, device, or building at a specific point in time. This value is typically measured in kilowatts (kW) and reflects real-time consumption rather than aggregated or averaged values over a time period." |
+| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#LCA_KPIs | LCA KPIs | KPIs related to Life Cycle Analysis (LCA) |
+| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#Material_Capacity | Material Capacity | General term referring to a materialâ€™s ability to store heat or other properties. |
+| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#Material_Property | Material Property | A category of physical and thermal characteristics of construction materials that influence their behavior, such as density, emissivity, thermal conductivity, and specific heat. |
+| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#Maximum_UHI_Intensity_per_Urban_District_or_Neighborhood | Maximum UHI Intensity Per Urban District Or Neighborhood | The peak temperature difference between an urban area and its surrounding rural areas, calculated per district or neighborhood to identify local UHI hotspots. |
+| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#MobilityStation | Mobility Station | A physical station or hub used by a mobility service, such as a bike-share dock, EV charging point cluster, or transit interchange. |
+| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#Monthly_Electricity_Consumption | Monthly Electricity Consumption | The amount of electricity consumed over a monthly period. |
+| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#Noise_Level_Sensor | Noise Level Sensor | Measures noise level |
+| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#Number_of_People_Affected_by_Extreme_Temperature_Events | Number Of People Affected By Extreme Temperature Events | Estimates the population exposed to heat-related risks during extreme temperature events, often used in health impact assessments or urban resilience planning. |
+| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#Operation_Phase_KPIs | Operation Phase KPIs | KPIs related to the Operation phase of a building or Neighborhood |
+| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#OperationalCostOfEnergy | Operational Cost Of Energy | A KPI representing the cost of energy during the operational stage of a building or neighborhood. |
+| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#Outdoor | Outdoor | A physical location that is outside the envelope of a building or structure, directly exposed to external environmental conditions. |
+| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#Outdoor_air_temperature | Outdoor Air Temperature | The temperature of ambient air outside the building. |
+| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#Outdoor_barometric_pressure | Outdoor Barometric Pressure | The atmospheric pressure at ground level. |
+| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#Outdoor_dew_point_temperature | Outdoor Dew Point Temperature | The temperature at which air becomes saturated with moisture and dew forms. |
+| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#Outdoor_diffuse_solar_radiation | Outdoor Diffuse Solar Radiation | Solar radiation received indirectly from the sky, excluding direct sunlight. |
+| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#Outdoor_direct_solar_radiation | Outdoor Direct Solar Radiation | Solar radiation received in a straight line from the sun. |
+| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#Outdoor_horizontal_infrared_radiation | Outdoor Horizontal Infrared Radiation | Longwave radiation received from the atmosphere, typically impacting building heat balance. |
+| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#Outdoor_relative_humidity | Outdoor Relative Humidity | The relative amount of moisture in the outdoor air. |
+| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#Outdoor_wind_direction | Outdoor Wind Direction | The compass direction from which the wind originates. |
+| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#Outdoor_wind_speed | Outdoor Wind Speed | The speed of wind outside, usually in m/s. |
+| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#PMV_Parameter | PMV Parameter | Parameters for calculating the PMV |
+| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#PTHP_Cooling_Energy | PTHP Cooling Energy | Cooling energy delivered by a PTHP system. |
+| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#PTHP_Electricity_Rate | PTHP Electricity Rate | The electricity usage rate of a Photovoltaic-Thermal Heat Pump (PTHP) system, typically in kW or kWh. |
+| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#PTHP_Heating_Energy | PTHP Heating Energy | Heating energy delivered by a PTHP system. |
+| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#PV_Peak_Installed_Power | PV Peak Installed Power | The maximum electrical power output (in kW) a photovoltaic system is capable of under standard test conditions. |
+| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#PV_Power | PV Power | The electrical power produced by a photovoltaic system at a given time. |
+| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#Parameter | Parameter | A variable input used in simulations, models, or control systems that influences system behavior or performance outcomes. |
+| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#ParkingFacility | Parking Facility | A facility that groups parking spaces and related occupancy information for vehicles or bicycles. |
+| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#ParkingSpace | Parking Space | An individual parking space contained within a parking facility. |
+| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#PedestrianFeature | Pedestrian Feature | A pedestrian-oriented urban element such as a path, crosswalk, or walkway. |
+| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#Percentage_of_City_Affected_by_UHI | Percentage Of City Affected By UHI | The proportion of the cityâ€™s total area experiencing significant UHI effects, indicating the spatial spread of urban thermal stress. |
+| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#Power_Consumption_in_Charging_Mode | Power Consumption In Charging Mode | The electrical power consumed while a storage or vehicle system is operating in charging mode. |
+| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#Power_Consumption_in_Discharging_Mode | Power Consumption In Discharging Mode | The electrical power consumed while a storage or vehicle system is operating in discharging mode. |
+| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#Power_Production | Power Production | The rate at which electrical power is being generated by a system or device at a specific moment in time. Typically measured in kilowatts (kW), this value represents real-time output from sources such as photovoltaic panels, batteries, wind turbines, or other energy-generating units. |
+| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#Predicted_Mean_Vote_PMV | Predicted Mean Vote PMV | A calculated thermal comfort index predicting average thermal sensation of a group on a 7-point scale, based on environmental and personal factors. |
+| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#Price | Price | A value representing the monetary cost of a product, service, or energy quantity, often expressed in â‚¬/kWh, â‚¬/unit, or total cost. |
+| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#Protection_Mat | Protection Mat | A layer that safeguards the underlying waterproofing membrane against mechanical damage during installation and maintenance. |
+| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#PublicTransportRoute | Public Transport Route | A route followed by a public transport service. |
+| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#Purchased_Amount | Purchased Amount | The total quantity of energy, water, or other utilities procured from external sources during the operation phase. |
+| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#Radiant_Temperature | Radiant Temperature | The weighted average of temperatures of all surrounding surfaces that radiate heat to or absorb heat from a point, used in thermal comfort calculations. |
+| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#Reflection | Reflection | The ability of a surface to reflect light, heat, or sound. |
+| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#Relative_Humidity | Relative Humidity | The ratio of the current amount of moisture in the air to the maximum amount it could hold at that temperature, expressed as a percentage. |
+| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#RenewableEnergyProduction | Renewable Energy Production | The amount of energy generated from renewable sources (e.g., solar, wind) on-site or through procurement. |
+| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#Replicability | Replicability | The potential for a process, product, or approach to be reproduced in other projects or contexts with similar outcomes. |
+| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#RoadSegment | Road Segment | A delimited segment of a street or road used for localized traffic observations and indicators. |
+| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#Roof_Deck | Roof Deck | The structural base layer of the roof that supports all other layers in the green roof system. |
+| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#Root_Barrier | Root Barrier | An impermeable layer that prevents plant roots from penetrating and damaging the waterproofing membrane or roof structure. |
+| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#Schedule | Schedule | A time-based control logic or pattern for operating building systems or components. |
+| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#Season | Season | A temporal classification (e.g., winter, summer) used to define seasonal variations in environmental or operational conditions. |
+| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#Self_Consumption_Ratio | Self Consumption Ratio | The ratio of self-produced renewable energy that is consumed within the building rather than exported to the grid. |
+| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#Setpoint | Setpoint | A target operational value that a control system aims to maintain, such as temperature, humidity, or airflow. |
+| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#SharedMobilityService | Shared Mobility Service | A mobility service that operates through one or more stations, vehicles, or hubs shared among users. |
+| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#ShortenedConstruction_RetrofittingCost | Shortened Construction Retrofitting Cost | The overall cost incurred during the retrofitting phase of a building. |
+| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#ShortenedConstruction_RetrofittingCost_Manifacturing | Shortened Construction Retrofitting Cost Manifacturing | Cost associated with manufacturing retrofitting components or materials. |
+| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#ShortenedConstruction_RetrofittingCost_SpaceCosts_WarehouseEstablishment | Shortened Construction Retrofitting Cost Space Costs Warehouse Establishment | Expenses related to space usage or temporary storage for retrofitting activities. |
+| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#ShortenedConstruction_RetrofittingCost_StockKeeping | Shortened Construction Retrofitting Cost Stock Keeping | Cost of storing materials, parts, and supplies during retrofitting. |
+| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#ShortenedConstruction_RetrofittingCost_Transportation | Shortened Construction Retrofitting Cost Transportation | Expenses incurred for transporting retrofitting materials, components, or labor. |
+| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#ShortenedConstruction_RetrofittingTime | Shortened Construction Retrofitting Time | The total time required to complete the retrofitting phase. |
+| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#Soil_Humidity_Sensor | Soil Humidity Sensor | A device that measures the volumetric water content in soil. It provides critical information for irrigation control, plant health monitoring, and green roof or landscape system optimization. |
+| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#Solar_Irradiance | Solar Irradiance | The power of solar radiation received on a surface per unit area. |
+| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#Solar_Reflectance | Solar reflectance | A material property describing the fraction of incoming solar radiation reflected by a surface. |
+| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#Solar_altitude_angle | Solar Altitude Angle | The angle of the sun above the horizon. |
+| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#Solar_azimuth_angle | Solar Azimuth Angle | The sunâ€™s position relative to true north, measured clockwise. |
+| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#Solar_hour | Solar Hour | The solar time based on the sunâ€™s position, used in solar angle calculations. |
+| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#Specific_Heat | Specific Heat | The amount of heat required to change the temperature of a unit mass of a material by one degree Celsius. |
+| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#Storage_System_Installed_Power | Storage System Installed Power | The rated power capacity (kW) of an energy storage system. |
+| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#Street | Street | A street-level urban location used to anchor pedestrian and traffic-related entities. |
+| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#Substrate | Substrate | The engineered soil or growing medium that provides anchorage, water, and nutrients for vegetation growth. |
+| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#Supplier | Supplier | A Supplier is a person responsible for providing goods, services, or components, typically to support the operation, maintenance, or development of a system or infrastructure. |
+| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#Supplier_Sourcing | Supplier Sourcing | A category encompassing data related to material or equipment sourcing, including distances traveled and transportation methods from supplier to project site. |
+| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#Task | Task | A discrete action or activity within a workflow, often associated with processes like installation, data collection, or system operation. |
+| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#ThermalComfort_OccupantPerception | Thermal Comfort Occupant Perception | A subjective indicator of how occupants experience thermal conditions (temperature, air movement, humidity). |
+| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#Thermal_Conductivity | Thermal Conductivity | The rate at which heat passes through a material, important for insulation and envelope performance. |
+| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#Thermostat_Schedule | Thermostat Schedule | Predefined temperature setpoint changes over time. |
+| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#Thickness | Thickness | The measure of depth across a componentâ€™s cross-section, commonly used in layers or walls. |
+| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#Time | Time | A temporal concept used to define sequences, durations, intervals, or timestamps associated with system operations or environmental conditions. |
+| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#TransitStop | Transit Stop | A stop or station served by a public transport route. |
+| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#Transmission | Transmission | Describes the ability or rate at which energy (e.g., heat, light, sound) or materials pass through a medium or component. |
+| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#UHI_KPIs | UHI KPIs | A group of metrics used to evaluate the presence, severity, and socio-environmental impact of the Urban Heat Island (UHI) effect, typically within urban districts or metropolitan areas. |
+| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#Vegetation | Vegetation | The living plant layer that offers environmental benefits such as thermal insulation, urban heat island mitigation, and stormwater management. |
+| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#Ventilation_Rate | Ventilation Rate | The amount of fresh air introduced into a space per unit of time, typically expressed in air changes per hour (ACH) or liters per second (L/s), crucial for indoor air quality. |
+| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#Ventilation_Schedule | Ventilation Schedule | Schedule managing ventilation system activity for fresh air supply. |
+| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#VisualComfort_OccupantPerception | Visual Comfort Occupant Perception | Reflects the occupant's perception of lighting quality, including glare, natural light access, and visual satisfaction. |
+| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#Voltage | Voltage | The electric potential difference between two points, typically measured in volts (V), relevant to energy systems and electric vehicles. |
+| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#Waterproofing | Waterproofing | A membrane layer that protects the building structure by preventing water infiltration from the roof system. |
+| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#Weather_File_Properties | Weather File Properties | Structured weather data parameters typically sourced from standard simulation weather files (e.g., EPW files) used in building performance analysis. |
+| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#Weight | Weight | The measure of the gravitational force acting on an object or material, often relevant for structural load calculations. |
+| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#Workflow | Workflow | A sequence of tasks or operations performed to complete a process, typically defined by temporal order or dependencies. |
+| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#Zone_Cooling_Setpoint | Zone Cooling Setpoint | Target temperature maintained by the cooling system in a specific zone. |
+| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#Zone_Energy | Zone Energy | Total energy used or generated in a defined zone or space. |
+| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#Zone_Heating_Setpoint | Zone Heating Setpoint | The predefined temperature at which the heating system activates to maintain comfort within a specified zone. |
+| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#Zone_Radiant_Temperature | Zone Radiant Temperature | The mean radiant temperature within a zone, reflecting the average thermal radiation from surrounding surfaces. |
+| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#Zone_Rate | Zone Rate | The rate of airflow, heating, or cooling delivered to a specific zone (e.g., L/s, kW). |
+| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#Zone_Relative_Humidity | Zone Relative Humidity | The relative humidity (percentage of moisture in the air relative to saturation) specific to a zone or room. |
+| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#Zone_Temperature | Zone Temperature | The air temperature measured or estimated in a specific zone, often used for HVAC control or comfort analysis. |
+| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#Zone_Transmitted_Energy | Zone Transmitted Energy | Energy transferred across boundaries within or between zones (e.g., via conduction or ventilation). |
+| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#Zone_Ventilation_Rate | Zone Ventilation Rate | The rate at which outdoor air is supplied or exchanged in a specific zone, usually measured in air changes per hour (ACH) or L/s. |
+| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#distance_ship | Shipping distance | Shipping distance (in km) via marine transport between supplier and project site. |
+| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#distance_truck | Truck distance | Land-based shipping distance (in km) by truck for material delivery or logistics. |
+| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#metabolic_rate | Metabolic rate | Represents the energy output of human activity, a key input for thermal comfort models. |
+| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#occupant_clothing_insulation_level | Occupant clothing insulation level | Measures the insulation effect of clothing worn by the occupant, impacting thermal perception. |
 | http://www.w3.org/ns/org#Organization | Organization |  |
-| http://www.w3.org/ns/ssn/System |  |  |
+| http://www.w3.org/ns/ssn/System |  | System is a unit of abstraction for pieces of infrastructure that implement Procedures. A System may have components, its subsystems, which are other Systems. |
 | http://xmlns.com/foaf/0.1/Agent | Agent |  |
-| http://xmlns.com/foaf/0.1/Document |  |  |
-| http://xmlns.com/foaf/0.1/Person | Person |  |
-| httphttp://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#Discharged_Energy |  |  |
+| http://xmlns.com/foaf/0.1/Document |  | A document. |
+| http://xmlns.com/foaf/0.1/Person | Person | The Person class represents people. |
 | https://bimerr.iot.linkeddata.es/def/weather#AtmosphericPhenomenon | Atmospheric Phenomenon | A natural phenomenon involving the physical properties of matter and energy. |
-| https://bimerr.iot.linkeddata.es/def/weather#DataSourceFiles |  |  |
-| https://bimerr.iot.linkeddata.es/def/weather#EPWFile |  |  |
+| https://bimerr.iot.linkeddata.es/def/weather#DataSourceFiles |  | Contains the type of format for the files analyzed. |
+| https://bimerr.iot.linkeddata.es/def/weather#EPWFile |  | Indicates if the file that have been analyzed is in format EPW from the Energy Plus Weather or the Climate OneBuilding.Weather services. |
 | https://bimerr.iot.linkeddata.es/def/weather#Ground | Ground | Ground properties where the measures are made. |
-| https://bimerr.iot.linkeddata.es/def/weather#Humidity |  |  |
+| https://bimerr.iot.linkeddata.es/def/weather#Humidity |  | Measure of the amount of moisture in the air. It tells you how comfortable it is to be outside, and if there is enough moisture to create clouds and rain. |
 | https://bimerr.iot.linkeddata.es/def/weather#Illuminance | Illuminance | The total luminous flux incident on a surface, per unit area. It is a measure of how much the incident light illuminates the surface, wavelength-weighted by the luminosity function to correlate with human brightness perception. |
 | https://bimerr.iot.linkeddata.es/def/weather#Precipitation | Precipitation | Any product of the condensation of atmospheric water vapour that falls under gravity from clouds. The main forms of precipitation include drizzle, rain, sleet, snow, ice pellets, graupel and hail. |
 | https://bimerr.iot.linkeddata.es/def/weather#Pressure | Pressure | The force exerted over a given area or object, either because of gravity pulling on it or other motion the object has.  Molecules in the air produce pressure through both their weight and movement, and this pressure is connected to other properties of the atmosphere. |
 | https://bimerr.iot.linkeddata.es/def/weather#Radiation | Radiation | The emission or transmission of energy in the form of waves or particles through space or through a material medium. |
 | https://bimerr.iot.linkeddata.es/def/weather#SkyCover | Sky Cover | The extent to which the sky is obscured by clouds. |
-| https://bimerr.iot.linkeddata.es/def/weather#Snow | Snow | Individual ice crystals that grow while suspended in the atmosphere—usually within clouds—and then fall, accumulating on the ground where they undergo further changes. |
+| https://bimerr.iot.linkeddata.es/def/weather#Snow | Snow | Individual ice crystals that grow while suspended in the atmosphereâ€”usually within cloudsâ€”and then fall, accumulating on the ground where they undergo further changes. |
 | https://bimerr.iot.linkeddata.es/def/weather#Temperature | Temperature | The measure of thermal or internal energy of the molecules within an object or gas.    We can measure temperature of an object using either direct contact or remote sensing.  Temperature of air is closely related to other atmospheric properties, such as pressure, volume and density. |
 | https://bimerr.iot.linkeddata.es/def/weather#WeatherProperty | Weather Property | Property type to classify  weather data. |
 | https://bimerr.iot.linkeddata.es/def/weather#Wind |  | The perceptible natural movement of the air, especially in the form of a current of air blowing from a particular direction. |
-| https://brickschema.org/schema/1.3/Brick#Primary_Energy_Consumption |  |  |
-| https://brickschema.org/schema/1.3/Brick#Storage_System_Installed_Capacity |  |  |
-| https://brickschema.org/schema/Brick#Absolute_Humidity_Sensor |  |  |
-| https://brickschema.org/schema/Brick#Air_Temperature_Sensor |  |  |
-| https://brickschema.org/schema/Brick#Battery |  |  |
-| https://brickschema.org/schema/Brick#Building | Building |  |
-| https://brickschema.org/schema/Brick#CO2_Sensor |  |  |
-| https://brickschema.org/schema/Brick#Current_Sensor |  |  |
-| https://brickschema.org/schema/Brick#Electric_Energy_Sensor | Electric_Energy_Sensor |  |
-| https://brickschema.org/schema/Brick#Electric_Power_Sensor | Electric Power Sensor |  |
+| https://brickschema.org/schema/Brick#Absolute_Humidity_Sensor |  | Measures the present state of absolute humidity |
+| https://brickschema.org/schema/Brick#Air_Temperature_Sensor |  | Measures the temperature of air |
+| https://brickschema.org/schema/Brick#Battery |  | A container that stores chemical energy that can be converted into electricity and used as a source of power |
+| https://brickschema.org/schema/Brick#Building | Building | An independent unit of the built environment with a characteristic spatial structure, intended to serve at least one function or user activity [ISO 12006-2:2013] |
+| https://brickschema.org/schema/Brick#CO2_Sensor |  | Measures properties of CO2 in air |
+| https://brickschema.org/schema/Brick#Current_Sensor |  | Senses the amperes of electrical current passing through the sensor |
+| https://brickschema.org/schema/Brick#Electric_Energy_Sensor | Electric_Energy_Sensor | Measures energy consumption |
+| https://brickschema.org/schema/Brick#Electric_Power_Sensor | Electric Power Sensor | Measures the amount of instantaneous electric power consumed |
 | https://brickschema.org/schema/Brick#Electrical_Equipment | Electrical Equipment |  |
 | https://brickschema.org/schema/Brick#Electrical_Meter |  |  |
-| https://brickschema.org/schema/Brick#Energy_Generation_Sensor | Energy Generation Sensor |  |
-| https://brickschema.org/schema/Brick#Energy_Generation_System | Energy Generation System |  |
-| https://brickschema.org/schema/Brick#Energy_Storage |  |  |
-| https://brickschema.org/schema/Brick#Equipment |  |  |
+| https://brickschema.org/schema/Brick#Energy_Generation_Sensor | Energy Generation Sensor | A sensor measuring the amount of generated energy. |
+| https://brickschema.org/schema/Brick#Energy_Generation_System | Energy Generation System | A collection of devices that generates electricity |
+| https://brickschema.org/schema/Brick#Energy_Storage |  | Devices or equipment that store energy in its various forms |
+| https://brickschema.org/schema/Brick#Equipment |  | devices that serve all or part of the building and may include electric power, lighting, transportation, or service water heating, including, but not limited to, furnaces, boilers, air conditioners, heat pumps, chillers, water heaters, lamps, luminaires, ballasts, elevators, escalators, or other devices or installations. |
 | https://brickschema.org/schema/Brick#Gas_Meter |  |  |
-| https://brickschema.org/schema/Brick#HVAC_Zone | HVAC Zone |  |
-| https://brickschema.org/schema/Brick#Humidity_Sensor |  |  |
-| https://brickschema.org/schema/Brick#Illuminance_Sensor |  |  |
-| https://brickschema.org/schema/Brick#Inverter |  |  |
+| https://brickschema.org/schema/Brick#HVAC_Zone | HVAC Zone | a space or group of spaces, within a building with heating, cooling, and ventilating requirements, that are sufficiently similar so that desired conditions (e.g., temperature) can be maintained throughout using a single sensor (e.g., thermostat or temperature sensor). |
+| https://brickschema.org/schema/Brick#Humidity_Sensor |  | Measures the concentration of water vapor in air |
+| https://brickschema.org/schema/Brick#Illuminance_Sensor |  | Measures the total luminous flux incident on a surface, per unit area |
+| https://brickschema.org/schema/Brick#Inverter |  | A device that changes direct current into alternating current |
 | https://brickschema.org/schema/Brick#Location |  |  |
 | https://brickschema.org/schema/Brick#Meter |  |  |
-| https://brickschema.org/schema/Brick#Motion_Sensor |  |  |
-| https://brickschema.org/schema/Brick#Occupancy_Count_Sensor |  |  |
-| https://brickschema.org/schema/Brick#PM10_Sensor |  |  |
-| https://brickschema.org/schema/Brick#PM1_Level_Sensor |  |  |
-| https://brickschema.org/schema/Brick#PM2.5_Sensor |  |  |
+| https://brickschema.org/schema/Brick#Motion_Sensor |  | Detects the presence of motion in some area |
+| https://brickschema.org/schema/Brick#Occupancy_Count_Sensor |  | Sensors measuring the number of people in an area |
+| https://brickschema.org/schema/Brick#PM10_Sensor |  | Detects matter of size 10 microns |
+| https://brickschema.org/schema/Brick#PM1_Level_Sensor |  | Detects level of particulates of size 1 microns |
+| https://brickschema.org/schema/Brick#PM2.5_Sensor |  | Detects matter of size 2.5 microns |
 | https://brickschema.org/schema/Brick#PV_Array |  |  |
-| https://brickschema.org/schema/Brick#PV_Generation_System |  |  |
-| https://brickschema.org/schema/Brick#PV_Panel |  |  |
-| https://brickschema.org/schema/Brick#Pressure_Sensor |  |  |
-| https://brickschema.org/schema/Brick#Relative_Humidity_Sensor |  |  |
-| https://brickschema.org/schema/Brick#Room | Room |  |
-| https://brickschema.org/schema/Brick#Sensor | Sensor |  |
-| https://brickschema.org/schema/Brick#Solar_Irradiance_Sensor |  |  |
-| https://brickschema.org/schema/Brick#Space | Space |  |
-| https://brickschema.org/schema/Brick#TVOC_Sensor |  |  |
-| https://brickschema.org/schema/Brick#Temperature_Sensor |  |  |
-| https://brickschema.org/schema/Brick#Transformer | Transformer |  |
-| https://brickschema.org/schema/Brick#Voltage_Sensor |  |  |
-| https://brickschema.org/schema/Brick#Weather_Station |  |  |
-| https://brickschema.org/schema/Brick#Zone | Zone |  |
-| https://saref.etsi.org/core/Actuator |  |  |
-| https://saref.etsi.org/core/Energy |  |  |
-| https://saref.etsi.org/core/Power |  |  |
-| https://saref.etsi.org/core/Property |  |  |
-| https://saref.etsi.org/core/Temperature |  |  |
-| https://saref.etsi.org/saref4agri/SoilTensiometer |  |  |
-| https://saref.etsi.org/saref4agri/WateringGun |  |  |
-| https://saref.etsi.org/saref4agri/WateringSystem |  |  |
-| https://saref.etsi.org/saref4agri/WateringValve |  |  |
-| https://saref.etsi.org/saref4agri/WeatherStation |  |  |
-| https://saref.etsi.org/saref4bldg/solarReflectance |  |  |
+| https://brickschema.org/schema/Brick#PV_Generation_System |  | A collection of photovoltaic devices that generates energy |
+| https://brickschema.org/schema/Brick#PV_Panel |  | An integrated assembly of interconnected photovoltaic cells designed to deliver a selected level of working voltage and current at its output terminals packaged for protection against environment degradation and suited for incorporation in photovoltaic power systems. |
+| https://brickschema.org/schema/Brick#Pressure_Sensor |  | Measure the amount of force acting on a unit area |
+| https://brickschema.org/schema/Brick#Primary_Energy_Consumption |  | The total energy extracted from natural sources to satisfy building demands, including all upstream losses. |
+| https://brickschema.org/schema/Brick#Relative_Humidity_Sensor |  | Measures the present state of absolute humidity relative to a maximum humidity given the same temperature |
+| https://brickschema.org/schema/Brick#Room | Room | Base class for all more specific room types. |
+| https://brickschema.org/schema/Brick#Sensor | Sensor | A Sensor is an input point that represents the value of a device or instrument designed to detect and measure a variable (ASHRAE Dictionary). |
+| https://brickschema.org/schema/Brick#Solar_Irradiance_Sensor |  | Measures solar irradiance levels for photovoltaic systems |
+| https://brickschema.org/schema/Brick#Space | Space | A part of the physical world or a virtual world whose 3D spatial extent is bounded actually or theoretically, and provides for certain functions within the zone it is contained in. |
+| https://brickschema.org/schema/Brick#Storage_System_Installed_Capacity |  | Maximum energy storage capacity of a system (e.g., in kWh). |
+| https://brickschema.org/schema/Brick#TVOC_Sensor |  | A sensor device that measures the concentration of Total Volatile Organic Compounds (TVOCs) in the air. |
+| https://brickschema.org/schema/Brick#Temperature_Sensor |  | Measures temperature: the physical property of matter that quantitatively expresses the common notions of hot and cold |
+| https://brickschema.org/schema/Brick#Transformer | Transformer | A Transformer is usually fed by a high-voltage source and then steps down the voltage to a lower-voltage feed for low-voltage application (such as lights). Transformers also can step up voltage, but this generally does not apply to in building distribution. |
+| https://brickschema.org/schema/Brick#Voltage_Sensor |  | Measures the voltage of an electrical device or object |
+| https://brickschema.org/schema/Brick#Weather_Station |  | A dedicated weather measurement station |
+| https://brickschema.org/schema/Brick#Zone | Zone | (1) a separately controlled heated or cooled space. (2) one occupied space or several occupied spaces with similar occupancy category, occupant density, zone air distribution effectiveness, and zone primary airflow per unit area. (3) space or group of spaces within a building for which the heating, cooling, or lighting requirements are sufficiently similar that desired conditions can be maintained throughout by a single controlling device. |
+| https://saref.etsi.org/core/Actuator |  | A device responsible for moving or controlling a mechanism or system by performing an actuating function |
+| https://saref.etsi.org/core/Energy |  | A measure of the capacity to perform work, commonly tracked in kilowatt-hours (kWh) or megajoules (MJ), across generation, storage, consumption, and transfer. |
+| https://saref.etsi.org/core/Power |  | The rate at which energy is transferred or converted, typically measured in watts (W) or kilowatts (kW). |
+| https://saref.etsi.org/core/Property |  | A measurable or descriptive attribute assigned to a component, material, space, or system within the building or urban environment. |
+| https://saref.etsi.org/core/Temperature |  | A physical quantity expressing thermal energy in a system or space, typically measured in degrees Celsius (Â°C) or Kelvin (K). |
+| https://saref.etsi.org/saref4agri/SoilTensiometer |  | A sensor that measures soil water tension (or matric potential), indicating how strongly water is held in the soil and how available it is for plant uptake. Often used in agricultural and landscaping contexts for precision irrigation. |
+| https://saref.etsi.org/saref4agri/WateringGun |  | An actuator to irrigate an space. |
+| https://saref.etsi.org/saref4agri/WateringSystem |  | An automated or manual system designed to irrigate plants, commonly used in green roofs, landscapes, or agricultural settings. |
+| https://saref.etsi.org/saref4agri/WateringValve |  | A class to describe an actuator for dispensing water. |
+| https://saref.etsi.org/saref4agri/WeatherStation |  | A system or device that collects meteorological data such as temperature, humidity, wind speed, and solar radiation, typically used for environmental monitoring and simulations. |
 | https://saref.etsi.org/saref4city/Agent | Agent | An agent making an action in the context of a city. An agent could be a person, software, etc. |
 | https://saref.etsi.org/saref4city/City | City | A city is a large human settlement. A city is distinguished from other human settlements by its relatively great size, but also by its functions and its special symbolic status, which may be conferred by a central authority. (https://en.wikipedia.org/wiki/City) |
+| https://saref.etsi.org/saref4city/KeyPerformanceIndicator | Key performance indicator | A Key Performance Indicator (KPI) is a type of performance measurement. KPIs evaluate the success of an organization or of a particular activity in which it engages. (Definition taken from FIWARE) |
 | https://saref.etsi.org/saref4city/Neighbourhood | Neighbourhood | A neighbourhood (British English), or neighborhood (American English; see spelling differences), is a geographically localised community within a larger city, town, suburb or rural area. (https://en.wikipedia.org/wiki/Neighbourhood) |
 | https://saref.etsi.org/saref4city/PublicAdministration | Public administration | Public leadership of public affairs directly responsible for executive action. (Definition taken from wikidata) |
-| https://w3id.org/def/saref4city#Key_Performance_Indicator | Key performance indicator | A Key Performance Indicator (KPI) is a type of performance measurement. KPIs evaluate the success of an organization or of a particular activity in which it engages. (Definition taken from FIWARE) |
-| https://w3id.org/seas/ElectricVehicle |  |  |
-| https://w3id.org/seas/ElectricVehicleChargingStation |  |  |
-| https://w3id.org/seas/ElectricVehicleChargingStationPool |  |  |
+| https://schema.org/ImageObject |  | A semantic mapping to Schema.org ImageObject, representing visual data such as simulation outputs, diagrams, or captured imagery. |
+| https://w3id.org/seas/ElectricVehicle |  | The class of electric vehicles. Electric vehicles can be charged using a connection to a electric vehicle service equipment. |
+| https://w3id.org/seas/ElectricVehicleChargingStation |  | The class of Charging Stations. An electric vehicle charging station is usually connected to the grid and composed of one or more electric vehicle service equipments. |
+| https://w3id.org/seas/ElectricVehicleChargingStationPool |  | The class of electric vehicle charging station pools. An electric vehicle charging station pool is connected to the grid and composed of one or more electric vehicle charging stations. |
+| nef6e752a7f4742088075df8948aac792b1 |  |  |
+| nef6e752a7f4742088075df8948aac792b12 |  |  |
+| nef6e752a7f4742088075df8948aac792b15 |  |  |
+| nef6e752a7f4742088075df8948aac792b6 |  |  |
+| nef6e752a7f4742088075df8948aac792b9 |  |  |
 
----
+## Object Properties
 
-## 🔗 Object Properties
+| URI | Label | Description |
+| --- | --- | --- |
+| http://bimerr.iot.linkeddata.es/def/key-performance-indicator#relatedKPI | related Kpi | relates an entity with specific kpi definitions. |
+| http://bimerr.iot.linkeddata.es/def/key-performance-indicator#relatedKPIValue | related Kpi value | Relates an entity with specific kpi values. |
+| http://bimerr.iot.linkeddata.es/def/key-performance-indicator#relatedProject | related project | Relates an entity with a project. |
+| http://bimerr.iot.linkeddata.es/def/key-performance-indicator#relatedScenario | related scenario | Relates an entity with a renovation scenario. |
+| http://bimerr.iot.linkeddata.es/def/material-properties#hasMaterial |  | Relation between a construction component (Layer, profile, constituent) and the materials that define them. |
+| http://bimerr.iot.linkeddata.es/def/material-properties#hasMaterialLayer |  | A relation between a layer set and the specific material layers. |
+| http://purl.org/dc/terms/hasFormat |  |  |
+| http://purl.org/vocab/cpsv#provides |  | The provides property links an Agent to a Public Service for which it is responsible. Whether it provides the service directly or outsources it is not relevant, the Agent that provides the service is the one that is ultimately responsible for its provision |
+| http://purl.org/vocab/cpsv#uses |  | The uses property links an Agent to a Public Service in which it plays the specific role of user, meaning that it provides the input and receives the output but does not play any direct role in providing the service. This will typically be an individual citizen or an outside organisation. |
+| http://vocab.gtfs.org/terms#parentStation |  |  |
+| http://vocab.gtfs.org/terms#route |  |  |
+| http://vocab.gtfs.org/terms#stop |  | Indicates that this has a certain stop. |
+| http://vocab.gtfs.org/terms#trip |  | Indicates that this is part of a certain gtfs:Trip |
+| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#hasAgent | has agent | Indicates that the subject involves or is carried out by the specified agent |
+| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#hasDependency | has dependency | Indicates that the subject depends on the object to be completed, initiated, or properly evaluated. |
+| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#hasDuration | has duration | Links a process, task, or event to its associated duration. |
+| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#hasImage | has image | Links an entity to an image representing or describing it. |
+| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#hasLayer | has layer | Relates a construction element, component, or material assembly to its individual layer(s). |
+| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#hasParkingSpace | has parking space | links a ParkingFacility to a ParkingSpace that it includes. |
+| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#hasSensor | has sensor | Indicates that a given system, component, or space is equipped with a sensor responsible for monitoring or measuring specific environmental or operational parameters. |
+| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#hasSetpoint | has setpoint | Relates a controllable system, device, or component to a setpoint that defines its intended target value for operation |
+| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#hasStation | has station | Links a shared mobility service or network to its stations. |
+| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#hasSupplier | has supplier | Relates a material or sourcing record to the supplier responsible for providing it. |
+| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#hasWeatherFileProperty | has weather file property | Relates a weather file to a specific environmental property it contains |
+| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#locatedOnStreet | located on street | Links a pedestrian feature (Path, Crosswalk) to a street (could use a schema:Route or ncrem:Street class). |
+| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#monitors_Segment | monitors segment | Relates a Sensor to the RoadSegment it monitors. |
+| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#servesStop | serves stop | Indicates a gtfs:Route serves a particular Stop (i.e., the stop is on that routeâ€™s itinerary). |
+| http://www.w3.org/ns/sosa/hasFeatureOfInterest |  | has feature of interest - A relation between an Observation and the entity whose quality was observed, or between an Actuation and the entity whose property was modified, or between an act of Sampling and the entity that was sampled. |
+| http://www.w3.org/ns/sosa/madeBySensor |  | made by Sensor - Relation between an Observation and the Sensor which made the Observations. |
+| http://www.w3.org/ns/sosa/observedProperty |  | observed property - Relation linking an Observation to the property that was observed. The ObservableProperty should be a property of the FeatureOfInterest (linked by hasFeatureOfInterest) of this Observation. |
+| https://brickschema.org/schema/Brick#feeds |  | Indicates that the subject is arranged upstream of the object, implying that some media flows from the subject into the object. |
+| https://brickschema.org/schema/Brick#hasLocation |  | Used to associate an entity (like equipment, sensors, or zones) with its physical or logical location within a building. This can be a room, floor, zone, or any other defined space. |
+| https://brickschema.org/schema/Brick#hasParameter |  | Links an entity to a parameter that defines certain operational or configuration aspects of that entity. |
+| https://brickschema.org/schema/Brick#hasPart |  | The subject is composed in part of the entity given by the object |
+| https://brickschema.org/schema/Brick#hasPoint |  | The subject has a source of telemetry identified by the object. In some systems the source of telemetry may be represented as a digital/analog input/output point |
+| https://brickschema.org/schema/Brick#hasTime |  | Indicates the relationship between a product, material, or component and the organization or agent that supplies it. |
+| https://brickschema.org/schema/Brick#hasTimeseriesId |  | The unique identifier (primary key) for this TimeseriesReference in some database |
+| https://brickschema.org/schema/Brick#hasUnit |  | Links a measurable quantity, parameter, or setpoint to its corresponding unit of measurement |
+| https://brickschema.org/schema/Brick#isLocationOf |  | Subject is the physical location encapsulating the object |
+| https://brickschema.org/schema/Brick#isPointOf |  | The subject is a source of telemetry related to the object. In some systems the source of telemetry may be represented as a digital/analog input/output point |
+| https://brickschema.org/schema/Brick#meters |  | Indicates the entity whose consumption/production of some substance is measured by this meter |
+| https://saref.etsi.org/core/hasProperty |  | Links a feature kind or a feature of interest to one of its properties. |
+| https://saref.etsi.org/saref4city/hasKPI |  | Indicates that a given feature of interest is associated with one or more Key Performance Indicators. |
+| https://saref.etsi.org/saref4ener/hasEnergy |  | A relationship between a power sequence and its energy (in terms of value and unit of measure) |
+| https://schema.org/address |  | Physical address of the item. |
+| https://schema.org/geo |  | The geo coordinates of the place. |
+| https://schema.org/provider |  |  |
 
-| URI | Label | Domain | Range |
-| --- | --- | --- | --- |
-| http://bimerr.iot.linkeddata.es/def/key-performance-indicator#relatedKPI | related Kpi | http://bimerr.iot.linkeddata.es/def/key-performance-indicator#Scenario | https://w3id.org/def/saref4city#Key_Performance_Indicator |
-| http://bimerr.iot.linkeddata.es/def/key-performance-indicator#relatedKPIValue | related Kpi value |  |  |
-| http://bimerr.iot.linkeddata.es/def/key-performance-indicator#relatedProject | related project | http://bimerr.iot.linkeddata.es/def/key-performance-indicator#Scenario |  |
-| http://bimerr.iot.linkeddata.es/def/key-performance-indicator#relatedScenario | related scenario |  | http://bimerr.iot.linkeddata.es/def/key-performance-indicator#Scenario |
-| http://bimerr.iot.linkeddata.es/def/material-properties#hasMaterial |  |  |  |
-| http://bimerr.iot.linkeddata.es/def/material-properties#hasMaterialLayer |  |  |  |
-| http://purl.org/dc/terms/hasFormat |  |  |  |
-| http://purl.org/vocab/cpsv#provides |  |  |  |
-| http://purl.org/vocab/cpsv#uses |  |  |  |
-| http://vocab.gtfs.org/terms#parentStation |  |  |  |
-| http://vocab.gtfs.org/terms#route |  |  |  |
-| http://vocab.gtfs.org/terms#stop |  |  |  |
-| http://vocab.gtfs.org/terms#trip |  |  |  |
-| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#hasAgent |  |  | http://xmlns.com/foaf/0.1/Agent |
-| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#hasDependency |  |  |  |
-| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#hasDuration |  |  |  |
-| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#hasImage |  |  |  |
-| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#hasLayer |  |  |  |
-| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#hasParkingSpace |  |  |  |
-| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#hasSensor |  |  | https://brickschema.org/schema/Brick#Sensor |
-| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#hasSetpoint |  |  | http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#Setpoint |
-| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#hasStation |  |  |  |
-| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#hasSupplier |  |  |  |
-| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#hasWeatherFileProperty |  |  | http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#Weather_File_Properties |
-| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#locatedOnStreet |  |  |  |
-| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#monitors_Segment |  | https://brickschema.org/schema/Brick#Sensor |  |
-| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#servesStop |  |  |  |
-| http://www.w3.org/ns/sosa/hasFeatureOfInterest |  |  |  |
-| http://www.w3.org/ns/sosa/madeBySensor |  |  |  |
-| http://www.w3.org/ns/sosa/observedProperty |  |  | https://saref.etsi.org/core/Property |
-| https://brickschema.org/schema/1.3/Brick#hasLocation |  | https://brickschema.org/schema/Brick#Location | https://brickschema.org/schema/Brick#Location |
-| https://brickschema.org/schema/1.3/Brick#hasParameter |  |  |  |
-| https://brickschema.org/schema/1.3/Brick#hasPart |  |  | https://brickschema.org/schema/Brick#Equipment |
-| https://brickschema.org/schema/1.3/Brick#hasTime |  |  | http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#Time |
-| https://brickschema.org/schema/1.3/Brick#hasTimeseriesId |  |  |  |
-| https://brickschema.org/schema/Brick#feeds |  |  |  |
-| https://brickschema.org/schema/Brick#hasPoint |  |  |  |
-| https://brickschema.org/schema/Brick#hasUnit |  |  | http://qudt.org/schema/qudt/Unit |
-| https://brickschema.org/schema/Brick#isLocationOf |  |  |  |
-| https://brickschema.org/schema/Brick#isPointOf |  | https://brickschema.org/schema/Brick#Sensor | https://brickschema.org/schema/Brick#Electrical_Equipment |
-| https://brickschema.org/schema/Brick#meters |  |  |  |
-| https://saref.etsi.org/core/hasProperty |  |  |  |
-| https://saref.etsi.org/core/hasValue |  |  |  |
-| https://saref.etsi.org/saref4city/hasKPI |  |  | https://w3id.org/def/saref4city#KeyPerformanceIndicator |
-| https://saref.etsi.org/saref4ener/hasEnergy |  |  | https://saref.etsi.org/core/Energy |
-| https://schema.org/address |  |  |  |
-| https://schema.org/geo |  | https://brickschema.org/schema/Brick#Location |  |
-| https://schema.org/provider |  | https://brickschema.org/schema/Brick#Location |  |
+## Datatype Properties
 
----
+| URI | Label | Description |
+| --- | --- | --- |
+| http://bimerr.iot.linkeddata.es/def/key-performance-indicator#description |  |  |
+| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#availableSpaces | available spaces | Current number of free/unoccupied parking spots available in the facility. |
+| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#averageSpeed | average speed | Average speed of vehicles, typically in kilometers per hour, on a road segment. |
+| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#capacity | capacity | Total number of parking spaces in the facility. |
+| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#congestionLevel | congestion level | A qualitative or quantitative indicator of congestion |
+| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#hasBikeCapacity | has bike capacity | number of bike parking spots |
+| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#occupancyRate | occupancy rate | The percentage of occupancy. |
+| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#occupiedSpaces | occupied spaces | Current number of occupied spots. |
+| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#vehicleCount | vehicle count | the number of vehicles observed in a time interval at a location (traffic volume count). |
+| http://www.w3.org/ns/sosa/resultTime |  | result time - The result time is the instant of time when the Observation, Actuation or Sampling activity was completed. |
+| https://brickschema.org/schema/Brick/ref#hasTimeseriesId | hasTimeseriesId | The unique identifier (primary key) for this TimeseriesReference in some database |
+| https://brickschema.org/schema/Brick/ref#storedAt | storedAt | A reference to where the data for this TimeseriesReference is stored |
+| https://saref.etsi.org/core/hasValue |  | Value of a property expressed as an RDF literal. Note that, even if decimal values are expected, values could use other datatypes. |
 
-## 📊 Data Properties
+## Annotation Properties
 
-| URI | Label | Domain | Range |
-| --- | --- | --- | --- |
-| http://bimerr.iot.linkeddata.es/def/key-performance-indicator#description |  |  |  |
-| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#availableSpaces |  |  | http://www.w3.org/2001/XMLSchema#int |
-| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#averageSpeed |  |  | http://www.w3.org/2001/XMLSchema#double |
-| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#capacity |  |  | http://www.w3.org/2001/XMLSchema#int |
-| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#congestionLevel |  |  | http://www.w3.org/2001/XMLSchema#string |
-| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#hasBikeCapacity |  |  |  |
-| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#occupancyRate |  |  | http://www.w3.org/2001/XMLSchema#double |
-| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#occupiedSpaces |  |  | http://www.w3.org/2001/XMLSchema#int |
-| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#vehicleCount |  |  | http://www.w3.org/2001/XMLSchema#int |
-| http://www.w3.org/ns/sosa/resultTime |  |  | http://www.w3.org/2001/XMLSchema#dateTime |
-| https://brickschema.org/schema/Brick/ref#hasTimeseriesId | hasTimeseriesId | https://brickschema.org/schema/Brick#Meter | http://www.w3.org/2001/XMLSchema#string |
-| https://brickschema.org/schema/Brick/ref#storedAt | storedAt |  | http://www.w3.org/2001/XMLSchema#anyURI |
-| https://w3id.org/saref#hasValue |  |  |  |
+| URI | Label | Description |
+| --- | --- | --- |
+| http://purl.org/dc/elements/1.1/title |  |  |
+| http://purl.org/dc/terms/contributor |  |  |
+| http://purl.org/dc/terms/creator |  |  |
+| http://purl.org/dc/terms/description |  |  |
+| http://purl.org/dc/terms/issued |  |  |
+| http://purl.org/dc/terms/license |  |  |
+| http://purl.org/dc/terms/publisher |  |  |
+| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#hasTimeseriesID |  |  |
+| http://www.w3.org/2004/02/skos/core#definition |  |  |
+| http://www.w3.org/ns/shacl#and |  |  |
+| http://www.w3.org/ns/shacl#class |  |  |
+| http://www.w3.org/ns/shacl#message |  |  |
+| http://www.w3.org/ns/shacl#property |  |  |
+| http://www.w3.org/ns/shacl#rule |  |  |
+| https://brickschema.org/schema/Brick#storedAt |  |  |
