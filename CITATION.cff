@@ -1,22 +1,32 @@
-
 cff-version: 1.2.0
+message: "If you use this ontology, please cite it using the metadata below."
 title: "NCREM Ontology"
+abstract: "Neighborhood Construction, Renovation & Energy Management (NCREM) Ontology for building, neighborhood, renovation, energy, comfort, weather, mobility, and KPI modeling."
+version: "1.1"
+date-released: 2026-04-03
+license: "CC-BY-4.0"
+repository-code: "https://github.com/fil97/NCREM-Ontology"
+url: "https://github.com/fil97/NCREM-Ontology"
+keywords:
+  - ontology
+  - semantic web
+  - smart buildings
+  - neighborhoods
+  - renovation
+  - energy management
+  - digital twins
+  - Brick
+  - SAREF
 authors:
   - family-names: Lygerakis
     given-names: Filippos
     affiliation: Technical University of Crete (TUC)
-    orcid: https://orcid.org/0009-0003-1336-0291
-
+    orcid: "https://orcid.org/0009-0003-1336-0291"
 contributors:
   - family-names: Kampelis
     given-names: Nikolaos
     affiliation: Cyprus Institute
-    orcid: https://orcid.org/0000-0003-2152-6602
+    orcid: "https://orcid.org/0000-0003-2152-6602"
   - family-names: Kolokotsa
     given-names: Dionysia
     affiliation: Technical University of Crete (TUC)
-date-released: 2025-09-18
-version: "1.0"
-license: "CC-BY-4.0"
-repository-code: 
-message: "If you use this ontology, please cite it using the metadata below."
