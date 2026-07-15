@@ -2,53 +2,60 @@
 
 Neighborhood Construction, Renovation & Energy Management (NCREM) Ontology
 
-Current release: `v1.1`
-Recommended ontology file: [`NCREM_Ontology_v1.1.ttl`](NCREM_Ontology_v1.1.ttl)
+Current release: `v1.2`
+Recommended ontology file: [`NCREM_Ontology_v1.2.ttl`](NCREM_Ontology_v1.2.ttl)
 
 ## Overview
 
-The NCREM ontology provides a semantic model for neighborhoods, buildings, renovation workflows, energy systems, environmental monitoring, comfort indicators, and neighborhood-scale KPIs.
+The NCREM ontology provides a semantic model for neighborhoods, buildings, renovation workflows, energy systems, environmental monitoring, agent-based modelling, UHI scenario assessment, geospatial features, recommendations, and neighborhood-scale KPIs.
 
 It is designed to support:
 
 - semantic data integration for building and district data
 - ontology-based digital twins
-- KPI modeling for energy, comfort, LCA, and UHI use cases
-- interoperability with well-known ontologies such as Brick and SAREF
+- KPI modeling for energy, comfort, LCA, UHI, mobility, exposure, and ABM use cases
+- interoperability with well-known ontologies such as Brick, SAREF, BOT, GeoSPARQL, PROV-O, OWL-Time, DCAT, RDF Data Cube, SOSA/SSN, and QUDT
 
 ## What Is In This Repository
 
-- [`NCREM_Ontology_v1.1.ttl`](NCREM_Ontology_v1.1.ttl): latest validated ontology release
+- [`NCREM_Ontology_v1.2.ttl`](NCREM_Ontology_v1.2.ttl): current ontology release
+- [`NCREM_Ontology_v1.1.ttl`](NCREM_Ontology_v1.1.ttl): previous public release
 - [`NCREM_Ontology_v1.0.ttl`](NCREM_Ontology_v1.0.ttl): original release
-- [`docs/ontology_details.md`](docs/ontology_details.md): generated term documentation for `v1.1`
+- [`docs/ontology_details.md`](docs/ontology_details.md): generated term documentation for `v1.2`
+- [`docs/release_notes_v1.2.md`](docs/release_notes_v1.2.md): release summary for `v1.2`
 - [`docs/release_notes_v1.1.md`](docs/release_notes_v1.1.md): release summary for `v1.1`
 - [`CITATION.cff`](CITATION.cff): citation metadata
 - [`LICENSE`](LICENSE): CC BY 4.0 license
 
-## Version 1.1 Highlights
+## Version 1.2 Highlights
 
-- adds ontology release metadata such as `owl:versionIRI`, `owl:imports`, and `dcterms:issued`
-- normalizes the KPI alignment with the ETSI SAREF4City namespace
-- strengthens local semantics with labels, definitions, domains, and ranges across local NCREM terms
-- improves concept modeling for setpoints, duration, images, green-roof layers, and material layers
-- introduces supporting mobility and traffic classes used by existing properties
-- adds lightweight disjointness axioms for cleaner reasoning
-- validates cleanly with no ontology findings in the current validation workflow
+- preserves `v1.1` and adds `NCREM_Ontology_v1.2.ttl` as the recommended ontology file
+- selectively reuses classes and properties from Brick, SAREF, BOT, GeoSPARQL, PROV-O, OWL-Time, DCAT, RDF Data Cube, SOSA/SSN, QUDT, and supporting vocabularies under their original namespace IRIs
+- does not use `owl:imports`; referenced vocabularies are documented with `dcterms:references`
+- keeps local NCREM additions focused on project-specific concepts such as `ABMModel`, `ABMScenario`, `UHIAssessmentModel`, `UHIMitigationMeasure`, `UHIHotspot`, `UHIReferenceZone`, `MaterialBank`, `MobilityScenario`, `MobilityIntervention`, `RecommendedAction`, `OccupantAction`, and `ScenarioAssessment`
+- reuses external classes directly for generic concepts such as model executions, datasets, observations, geometry, provenance, and temporal information
+- places required concepts that are absent from the selected source vocabularies in the `ncrem:` namespace
+- aligns workflows and tasks with PROV-O and uses the canonical Brick 1.3 reference vocabulary for external time-series identifiers
+- parses cleanly as RDF/Turtle
 
-## Validation Summary
+## Technical Verification
 
-Validation result for `NCREM_Ontology_v1.1.ttl`:
+Verification result for `NCREM_Ontology_v1.2.ttl`:
 
 - RDF/Turtle parse: OK
-- Triples: 1203
-- Classes: 253
-- Object properties: 47
-- Datatype properties: 13
-- Annotation properties: 15
+- Triples: 1335
+- Classes: 282
+- Object properties: 58
+- Datatype properties: 16
+- Annotation properties: 13
+- NCREM classes: 172
+- NCREM object properties: 21
+- NCREM datatype properties: 8
+- `owl:imports` declarations: 0
 
 ## Namespaces
 
-The `v1.1` release declares the following prefixes in the ontology file:
+The `v1.2` release declares the following prefixes in the ontology file:
 
 | Prefix | Namespace URI |
 | --- | --- |
@@ -65,15 +72,22 @@ The `v1.1` release declares the following prefixes in the ontology file:
 | `shacl` | `http://www.w3.org/ns/shacl#` |
 | `s4city` | `https://saref.etsi.org/saref4city/` |
 | `dcterms` | `http://purl.org/dc/terms/` |
+| `bot` | `https://w3id.org/bot#` |
+| `dcat` | `http://www.w3.org/ns/dcat#` |
+| `geo` | `http://www.opengis.net/ont/geosparql#` |
+| `prov` | `http://www.w3.org/ns/prov#` |
+| `qb` | `http://purl.org/linked-data/cube#` |
 | `saref4ener` | `https://saref.etsi.org/saref4ener/` |
 | `ssn` | `http://www.w3.org/ns/ssn/` |
 | `sosa` | `http://www.w3.org/ns/sosa/` |
+| `time` | `http://www.w3.org/2006/time#` |
 | `foaf` | `http://xmlns.com/foaf/0.1/` |
 | `org` | `http://www.w3.org/ns/org#` |
 | `schema` | `https://schema.org/` |
 | `seas` | `https://w3id.org/seas/` |
 | `s4agri` | `https://saref.etsi.org/saref4agri/` |
 | `s4bldg` | `https://saref.etsi.org/saref4bldg/` |
+| `s4envi` | `https://saref.etsi.org/saref4envi/` |
 | `building` | `http://bimerr.iot.linkeddata.es/def/building#` |
 | `mat` | `http://bimerr.iot.linkeddata.es/def/material-properties#` |
 | `weat` | `https://bimerr.iot.linkeddata.es/def/weather#` |
@@ -87,7 +101,14 @@ The `v1.1` release declares the following prefixes in the ontology file:
 For a complete list of classes and properties with their URIs, labels, and descriptions, see:
 
 - [`docs/ontology_details.md`](docs/ontology_details.md)
-- [`docs/release_notes_v1.1.md`](docs/release_notes_v1.1.md)
+- [`docs/release_notes_v1.2.md`](docs/release_notes_v1.2.md)
+
+To regenerate the term documentation:
+
+```bash
+python -m pip install -r tools/requirements.txt
+python tools/generate_ontology_details.py NCREM_Ontology_v1.2.ttl docs/ontology_details.md
+```
 
 ## Example SPARQL Query
 
@@ -110,7 +131,7 @@ LIMIT 20
 If you use this ontology, please cite it as:
 
 ```text
-Filippos Lygerakis. NCREM Ontology v1.1. Technical University of Crete (TUC), 2026.
+Filippos Lygerakis. NCREM Ontology v1.2. Technical University of Crete (TUC), 2026.
 ```
 
 Machine-readable citation metadata is provided in [`CITATION.cff`](CITATION.cff).
