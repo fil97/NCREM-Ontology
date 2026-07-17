@@ -1,13 +1,13 @@
 # NCREM Ontology Details
 
-This document provides a generated overview of the terms defined or reused in `NCREM_Ontology_v1.2.ttl`.
+This document provides a generated overview of the terms defined or reused in `NCREM_Ontology_v1.2.1.ttl`.
 
 ## Summary
 
-- Source file: `NCREM_Ontology_v1.2.ttl`
-- Triples: 1335
-- Classes: 282
-- Object properties: 58
+- Source file: `NCREM_Ontology_v1.2.1.ttl`
+- Triples: 1362
+- Classes: 285
+- Object properties: 60
 - Datatype properties: 16
 - Annotation properties: 13
 - NCREM classes: 172
@@ -212,6 +212,7 @@ This document provides a generated overview of the terms defined or reused in `N
 | http://www.w3.org/ns/dcat#Dataset |  |  |
 | http://www.w3.org/ns/org#Organization | Organization |  |
 | http://www.w3.org/ns/prov#Activity |  |  |
+| http://www.w3.org/ns/prov#Agent |  |  |
 | http://www.w3.org/ns/prov#Entity |  |  |
 | http://www.w3.org/ns/prov#Plan |  |  |
 | http://www.w3.org/ns/ssn/System |  | System is a unit of abstraction for pieces of infrastructure that implement Procedures. A System may have components, its subsystems, which are other Systems. |
@@ -260,6 +261,7 @@ This document provides a generated overview of the terms defined or reused in `N
 | https://brickschema.org/schema/Brick#PV_Array |  |  |
 | https://brickschema.org/schema/Brick#PV_Generation_System |  | A collection of photovoltaic devices that generates energy |
 | https://brickschema.org/schema/Brick#PV_Panel |  | An integrated assembly of interconnected photovoltaic cells designed to deliver a selected level of working voltage and current at its output terminals packaged for protection against environment degradation and suited for incorporation in photovoltaic power systems. |
+| https://brickschema.org/schema/Brick#Point |  |  |
 | https://brickschema.org/schema/Brick#Pressure_Sensor |  | Measure the amount of force acting on a unit area |
 | https://brickschema.org/schema/Brick#Relative_Humidity_Sensor |  | Measures the present state of absolute humidity relative to a maximum humidity given the same temperature |
 | https://brickschema.org/schema/Brick#Room | Room | Base class for all more specific room types. |
@@ -287,6 +289,7 @@ This document provides a generated overview of the terms defined or reused in `N
 | https://saref.etsi.org/saref4city/KeyPerformanceIndicator | Key performance indicator | A Key Performance Indicator (KPI) is a type of performance measurement. KPIs evaluate the success of an organization or of a particular activity in which it engages. (Definition taken from FIWARE) |
 | https://saref.etsi.org/saref4city/Neighbourhood | Neighbourhood | A neighbourhood (British English), or neighborhood (American English; see spelling differences), is a geographically localised community within a larger city, town, suburb or rural area. (https://en.wikipedia.org/wiki/Neighbourhood) |
 | https://saref.etsi.org/saref4city/PublicAdministration | Public administration | Public leadership of public affairs directly responsible for executive action. (Definition taken from wikidata) |
+| https://schema.org/Action |  |  |
 | https://schema.org/ImageObject |  | A semantic mapping to Schema.org ImageObject, representing visual data such as simulation outputs, diagrams, or captured imagery. |
 | https://w3id.org/bot#Building |  |  |
 | https://w3id.org/bot#Element |  |  |
@@ -316,31 +319,33 @@ This document provides a generated overview of the terms defined or reused in `N
 | http://vocab.gtfs.org/terms#stop |  | Indicates that this has a certain stop. |
 | http://vocab.gtfs.org/terms#trip |  | Indicates that this is part of a certain gtfs:Trip |
 | http://www.opengis.net/ont/geosparql#hasGeometry |  |  |
-| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#assessesScenario | assesses scenario | Links a scenario assessment activity to the scenario being evaluated. |
+| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#assessesScenario | assesses scenario | Links a scenario assessment activity to the scenario entity it evaluates; this specializes the PROV-O usage relation. |
 | http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#changesSetpoint | changes setpoint | Links a recommended action to a heating, cooling, thermostat, ventilation, or other setpoint that the action changes. |
-| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#evaluatesMeasure | evaluates measure | Links a scenario assessment to a project-specific mitigation measure, mobility intervention, recommended action, or other planned measure that it evaluates. |
-| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#hasAgent | has agent | Indicates that the subject involves or is carried out by the specified agent |
-| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#hasDependency | has dependency | Indicates that the subject depends on the object to be completed, initiated, or properly evaluated. |
-| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#hasDuration | has duration | Links a process, task, or event to its associated duration. |
-| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#hasImage | has image | Links an entity to an image representing or describing it. |
-| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#hasLayer | has layer | Relates a construction element, component, or material assembly to its individual layer(s). |
-| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#hasMaterialBank | has material bank | Links a building, neighbourhood, scenario, UHI workflow, circularity workflow, or DT service to the material bank it uses or produces. |
-| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#hasParameter | has parameter | Links an entity to a parameter that defines certain operational or configuration aspects of that entity. |
+| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#evaluatesMeasure | evaluates measure | Links a scenario assessment activity to a project-specific mitigation measure, mobility intervention, recommended action, or other plan that it evaluates; this specializes the PROV-O usage relation. |
+| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#hasAgent | has agent | Attributes a workflow plan to an agent responsible for authoring, owning, or maintaining that plan. Agents participating in an executed activity should be linked with prov:wasAssociatedWith. |
+| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#hasDependency | has dependency | Links a task to another task on which it depends for completion, initiation, or evaluation. |
+| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#hasDuration | has duration | Links a workflow plan to its planned duration specification. Duration assertions about an executed temporal entity should use time:hasDuration directly. |
+| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#hasImage | has image | Links an NCREM resource to an image representing or describing it; this is a project-profile specialization of schema:image. |
+| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#hasLayer | has layer | Relates a construction element or material assembly to one of its material layers; this is a project-profile specialization of mat:hasMaterialLayer. |
+| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#hasMaterialBank | has material bank | Associates a building, neighbourhood, scenario, workflow, or digital-twin service with a relevant material bank. When an activity specifically uses or generates that material bank, prov:used or prov:generated should be asserted directly. |
+| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#hasParameter | has parameter | Links a model, scenario, workflow, or control configuration resource to an input parameter. It is distinct from core:hasProperty, whose subject is a SAREF feature kind or feature of interest. |
 | http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#hasParkingSpace | has parking space | links a ParkingFacility to a ParkingSpace that it includes. |
-| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#hasSensor | has sensor | Indicates that a given system, component, or space is equipped with a sensor responsible for monitoring or measuring specific environmental or operational parameters. |
+| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#hasSensor | has sensor | Indicates that a system, component, or space has a Brick sensor point responsible for monitoring an environmental or operational property. |
 | http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#hasSetpoint | has setpoint | Relates a controllable system, device, or component to a setpoint that defines its intended target value for operation |
 | http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#hasStation | has station | Links a shared mobility service or network to its stations. |
 | http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#hasSupplier | has supplier | Relates a material or sourcing record to the supplier responsible for providing it. |
-| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#hasTask | has task | Relates a workflow plan to a task or activity defined as part of that workflow. |
+| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#hasTask | has task | Relates a workflow plan to a task or activity defined as a constituent part of that workflow. |
 | http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#hasWeatherFileProperty | has weather file property | Relates a weather file to a specific environmental property it contains |
 | http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#locatedOnStreet | located on street | Links a pedestrian feature (Path, Crosswalk) to a street (could use a schema:Route or ncrem:Street class). |
 | http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#monitors_Segment | monitors segment | Relates a Sensor to the RoadSegment it monitors. |
-| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#recommendsAction | recommends action | Links a recommendation output, chatbot response, or decision-support artifact to the action it recommends. |
+| http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#recommendsAction | recommends action | Links a recommendation output, chatbot response, or decision-support artifact to the potential action it recommends; this specializes schema:potentialAction. |
 | http://www.semanticweb.org/filippos/ontologies/2023/4/NCREM_Ontology#servesStop | serves stop | Indicates that a gtfs:Route serves a particular stop (i.e., the stop is on that route’s itinerary). |
 | http://www.w3.org/2006/time#hasTime |  |  |
 | http://www.w3.org/ns/prov#generated |  |  |
 | http://www.w3.org/ns/prov#used |  |  |
 | http://www.w3.org/ns/prov#wasAssociatedWith |  |  |
+| http://www.w3.org/ns/prov#wasAttributedTo |  |  |
+| http://www.w3.org/ns/prov#wasInformedBy |  |  |
 | http://www.w3.org/ns/sosa/hasFeatureOfInterest |  | has feature of interest - A relation between an Observation and the entity whose quality was observed, or between an Actuation and the entity whose property was modified, or between an act of Sampling and the entity that was sampled. |
 | http://www.w3.org/ns/sosa/madeBySensor |  | made by Sensor - Relation between an Observation and the Sensor which made the Observations. |
 | http://www.w3.org/ns/sosa/observedProperty |  | observed property - Relation linking an Observation to the property that was observed. The ObservableProperty should be a property of the FeatureOfInterest (linked by hasFeatureOfInterest) of this Observation. |
