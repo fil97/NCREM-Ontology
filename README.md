@@ -2,8 +2,8 @@
 
 Neighborhood Construction, Renovation & Energy Management (NCREM) Ontology
 
-Current release: `v1.2`
-Recommended ontology file: [`NCREM_Ontology_v1.2.ttl`](NCREM_Ontology_v1.2.ttl)
+Current release: `v1.2.1`
+Recommended ontology file: [`NCREM_Ontology_v1.2.1.ttl`](NCREM_Ontology_v1.2.1.ttl)
 
 ## Overview
 
@@ -18,44 +18,49 @@ It is designed to support:
 
 ## What Is In This Repository
 
-- [`NCREM_Ontology_v1.2.ttl`](NCREM_Ontology_v1.2.ttl): current ontology release
-- [`NCREM_Ontology_v1.1.ttl`](NCREM_Ontology_v1.1.ttl): previous public release
+- [`NCREM_Ontology_v1.2.1.ttl`](NCREM_Ontology_v1.2.1.ttl): current ontology release
+- [`NCREM_Ontology_v1.2.ttl`](NCREM_Ontology_v1.2.ttl): previous public release
+- [`NCREM_Ontology_v1.1.ttl`](NCREM_Ontology_v1.1.ttl): earlier public release
 - [`NCREM_Ontology_v1.0.ttl`](NCREM_Ontology_v1.0.ttl): original release
-- [`docs/ontology_details.md`](docs/ontology_details.md): generated term documentation for `v1.2`
+- [`docs/ontology_details.md`](docs/ontology_details.md): generated term documentation for `v1.2.1`
+- [`docs/property_alignment_v1.2.1.md`](docs/property_alignment_v1.2.1.md): mapping decisions and semantic rationale for local properties
+- [`docs/release_notes_v1.2.1.md`](docs/release_notes_v1.2.1.md): release summary for `v1.2.1`
 - [`docs/release_notes_v1.2.md`](docs/release_notes_v1.2.md): release summary for `v1.2`
 - [`docs/release_notes_v1.1.md`](docs/release_notes_v1.1.md): release summary for `v1.1`
 - [`CITATION.cff`](CITATION.cff): citation metadata
 - [`LICENSE`](LICENSE): CC BY 4.0 license
 
-## Version 1.2 Highlights
+## Version 1.2.1 Highlights
 
-- preserves `v1.1` and adds `NCREM_Ontology_v1.2.ttl` as the recommended ontology file
+- preserves `v1.2` and adds `NCREM_Ontology_v1.2.1.ttl` as the recommended ontology file
 - selectively reuses classes and properties from Brick, SAREF, BOT, GeoSPARQL, PROV-O, OWL-Time, DCAT, RDF Data Cube, SOSA/SSN, QUDT, and supporting vocabularies under their original namespace IRIs
 - does not use `owl:imports`; referenced vocabularies are documented with `dcterms:references`
-- keeps local NCREM additions focused on project-specific concepts such as `ABMModel`, `ABMScenario`, `UHIAssessmentModel`, `UHIMitigationMeasure`, `UHIHotspot`, `UHIReferenceZone`, `MaterialBank`, `MobilityScenario`, `MobilityIntervention`, `RecommendedAction`, `OccupantAction`, and `ScenarioAssessment`
-- reuses external classes directly for generic concepts such as model executions, datasets, observations, geometry, provenance, and temporal information
-- places required concepts that are absent from the selected source vocabularies in the `ncrem:` namespace
-- aligns workflows and tasks with PROV-O and uses the canonical Brick 1.3 reference vocabulary for external time-series identifiers
+- adds formal superproperty mappings for nine NCREM relationships where their semantics and domains are compatible with PROV-O, Schema.org, Brick, Dublin Core, or BIMERR
+- clarifies the distinct semantics of local workflow-duration, configuration-parameter, and material-bank associations instead of asserting unsafe equivalence
+- corrects the selective Brick hierarchy so that `brick:Sensor` specializes `brick:Point`, consistently with Brick 1.3
+- keeps every NCREM v1.2 class and property IRI unchanged, so existing data and queries remain compatible
+- documents mapping decisions and the reasons for retaining project-specific relationships
 - parses cleanly as RDF/Turtle
 
 ## Technical Verification
 
-Verification result for `NCREM_Ontology_v1.2.ttl`:
+Verification result for `NCREM_Ontology_v1.2.1.ttl`:
 
 - RDF/Turtle parse: OK
-- Triples: 1335
-- Classes: 282
-- Object properties: 58
+- Triples: 1362
+- Classes: 285
+- Object properties: 60
 - Datatype properties: 16
 - Annotation properties: 13
 - NCREM classes: 172
 - NCREM object properties: 21
 - NCREM datatype properties: 8
+- NCREM properties with a formal external superproperty: 9
 - `owl:imports` declarations: 0
 
 ## Namespaces
 
-The `v1.2` release declares the following prefixes in the ontology file:
+The `v1.2.1` release declares the following prefixes in the ontology file:
 
 | Prefix | Namespace URI |
 | --- | --- |
@@ -101,13 +106,16 @@ The `v1.2` release declares the following prefixes in the ontology file:
 For a complete list of classes and properties with their URIs, labels, and descriptions, see:
 
 - [`docs/ontology_details.md`](docs/ontology_details.md)
+- [`docs/property_alignment_v1.2.1.md`](docs/property_alignment_v1.2.1.md)
+- [`docs/release_notes_v1.2.1.md`](docs/release_notes_v1.2.1.md)
 - [`docs/release_notes_v1.2.md`](docs/release_notes_v1.2.md)
 
 To regenerate the term documentation:
 
 ```bash
 python -m pip install -r tools/requirements.txt
-python tools/generate_ontology_details.py NCREM_Ontology_v1.2.ttl docs/ontology_details.md
+python tools/generate_ontology_details.py NCREM_Ontology_v1.2.1.ttl docs/ontology_details.md
+python tools/validate_release.py NCREM_Ontology_v1.2.1.ttl
 ```
 
 ## Example SPARQL Query
@@ -131,7 +139,7 @@ LIMIT 20
 If you use this ontology, please cite it as:
 
 ```text
-Filippos Lygerakis. NCREM Ontology v1.2. Technical University of Crete (TUC), 2026.
+Filippos Lygerakis. NCREM Ontology v1.2.1. Technical University of Crete (TUC), 2026.
 ```
 
 Machine-readable citation metadata is provided in [`CITATION.cff`](CITATION.cff).
